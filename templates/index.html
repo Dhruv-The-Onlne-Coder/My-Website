@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Webview</title>
+</head>
+<body>
+	<h1 id="headone">Hello!</h1>
+	<p id="ptwo">This is dhruv. How is this website</p>
+	<button onclick="openWindow()" id="buttonone">I Am A Button. Click Me!</button>
+	<style>
+		#headone {
+			color: blue;
+		}
+		#ptwo {
+			color: red;
+		}
+		#buttonone {
+			color: blue;
+			align-items: center;
+			align-self: center;
+		}
+	</style>
+	<script>
+		function openWindow() {
+			window.open("http://127.0.0.1:5000/about", "_parent");
+		}
+	</script>
+</body>
+</html>
